@@ -59,7 +59,7 @@ print (short_dist)
 def trace(endval, data, startval, path=[]):
     path.append(endval)
     if data[endval]['prev'] == None:
-        return 'no path'
+        return '1 '
     if endval == startval:
         return path
     return trace(data[endval]['prev'], data, startval, path)
